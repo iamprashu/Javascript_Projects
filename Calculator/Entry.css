@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Size-Btn{
+    width: 70px;
+    height:70px;
+}
