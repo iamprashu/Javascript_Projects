@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TailwindCompiled.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div class="mainBG duration-300 ease-in-out bg-black h-screen p-2 w-screen flex justify-center flex-col items-center gap-5">
+        <!-- <p class="text-xl text-white">Check Modes</p> -->
+        <div class="mode flex gap-5">
+            <button class="bg-[#0D7377] Light p-2 rounded-lg text-white font-extrabold" onclick="SwitchToDark()">Checkout Dark Mode</button>
+            <button class="bg-[#0D7377] Light p-2 rounded-lg text-white font-extrabold" onclick="SwitchToLight()">Checkout Light Mode</button>
+        </div>
+            <div class="bg-[#3D0000] duration-300 ease-in-out  clockBg h-[200px] w-[500px] rounded-xl flex justify-between flex-col p-3 text-white">
+                <div class="liveTime  p-3 h-[120px] w-[500px] flex  items-center justify-between">
+                    <p class="text-9xl font-extrabold font-nova duration-300 ease-in-out text-[#FF0000]" id="Hour"></p>
+                    <p class="text-9xl  font-extrabold font-nova " id="dots">:</p>
+                    <p class="text-9xl text-white font-extrabold font-nova" id="Min">00</p>
+                    
+                    <div class="p-1 h-[100%] w-[100px] flex flex-col justify-between items-start">
+                        <p id="ampm"class="text-4xl font-extrabold duration-300 ease-in-out text-[#FF2E63]"></p>
+                        <p id="Seconds"class="text-4xl font-nova text-[#14FFEC]">01</p>
+                    </div>
+                </div>
+
+                <div class="CompleteDate duration-300 ease-in-out h-[60px] w-[100%] flex items-center justify-evenly text- ">
+                    <p id="Month" class="text-4xl font-extrabold"></p>
+                    <p id="Day" class="text-4xl font-extrabold">13</p>
+                    <p id="DayName" class="text-4xl font-extrabold">Thrusday</p>
+                    <p id= "Year" class="text-4xl font-extrabold">2025</p>
+                </div>
+            </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
