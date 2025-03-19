@@ -41,7 +41,7 @@ To edit the project and recompile the Tailwind CSS:
 2. Make changes to the Tailwind configuration or source files.
 3. Recompile the CSS:
    ```bash
-   npx tailwindcss -i ./src/TailwindEntry.css -o ./TailwindCompiled.css --watch
+   npx tailwindcss -i TailwindEntry.css -o TailwindCompiled.css --watch
    ```
 
 ## Project Structure
