@@ -7,18 +7,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
     <title>Digital Clock</title>
 </head>
-<body>
-    <div class="mainBG p-10 duration-300 ease-in-out bg-black h-screen  w-screen flex justify-center flex-col items-center gap-5">
+<body class="">
+    <div class="mainBG duration-300 ease-in-out bg-black h-screen  w-screen flex justify-center flex-col items-center gap-5">
         <!-- <p class="text-xl text-white">Check Modes</p> -->
         <div class="mode flex gap-5">
             <button class="bg-[#0D7377] Light p-2 rounded-lg text-white font-extrabold" onclick="SwitchToDark()">Checkout Dark Mode</button>
             <button class="bg-[#0D7377] Light p-2 rounded-lg text-white font-extrabold" onclick="SwitchToLight()">Checkout Light Mode</button>
         </div>
-            <div class="bg-[#3D0000] duration-300 ease-in-out  clockBg h-[200px] w-[500px] rounded-xl flex justify-between flex-col p-3 text-white">
-                <div class="liveTime  p-3 h-[120px] w-[500px] flex  items-center justify-between">
-                    <p class="text-9xl font-extrabold font-nova duration-300 ease-in-out text-[#FF0000]" id="Hour"></p>
-                    <p class="text-9xl  font-extrabold font-nova " id="dots">:</p>
-                    <p class="text-9xl text-white font-extrabold font-nova" id="Min">00</p>
+            <div class="bg-[#3D0000] duration-300 ease-in-out  clockBg h-[200px] w-[400px] rounded-xl flex justify-around flex-col p-3 text-white">
+                <div class="liveTime  p-3 h-[120px] w-[400px] flex  items-center justify-between">
+                    <p class="text-7xl font-extrabold font-nova duration-300 ease-in-out text-[#FF0000]" id="Hour"></p>
+                    <p class="text-7xl  font-extrabold font-nova " id="dots">:</p>
+                    <p class="text-7xl text-white font-extrabold font-nova" id="Min">00</p>
                     
                     <div class="p-1 h-[100%] w-[100px] flex flex-col justify-between items-start">
                         <p id="ampm"class="text-4xl font-extrabold duration-300 ease-in-out text-[#FF2E63]"></p>
