@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TailWind.css">
+    <link rel="stylesheet" href="plugin.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <!--  -->
+    <div class="bg-[url(bg.jpg)] bg-cover h-screen w-screen flex items-center justify-around bg-no-repeat bg-cover">
+
+            <div class="MainBox h-auto bg-black/25 max-w-[800px]  gap-5 rounded-xl text-white  flex flex-col flex-wrap justify-evenly items-center p-3 backdrop-blur-sm">
+
+                <div class="grid  grid-cols-2  gap-10 grid-flow-row">
+
+
+                    <div class="bg-black/40 h-auto w-auto p-5 rounded-xl flex flex-col   gap-2 items-center backdrop-blur-md" >
+                        <p>From Country</p>
+                        <img src="https://flagsapi.com/US/shiny/64.png" class="fromImage" height="50px" width="50px">
+                        <h1>Enter Amount</h1>
+                        <input type="text" id = "fromAmt" class="h-[40px] w-[150px] rounded-xl p-2 bg-black/20 backdrop-blur-xl text-white font-[800]">
+                        
+                        <select name = "from" class="FromSelect bg-black/20 p-1 w-[200px] backdrop-blur-lg text-white text-[500] font-medium rounded-lg" name="from" id="" >
+                            
+                        </select>
+
+                    </div>
+                    <div class="bg-black/40 h-auto w-auto p-5 rounded-xl flex flex-col  justify-evenly items-center backdrop-blur-md" >
+                        <img src="https://flagsapi.com/IN/shiny/64.png" class="fromImage" height="80px" width="80px">
+                    
+                        <p>Convert to</p>
+                        <select name="to" class="toSelect bg-black/20 p-1 w-[200px] backdrop-blur-lg  text-white text-[500] font-medium rounded-lg" name="to" id="" >
+                            
+                    </select>
+
+                </div>
+                </div>
+
+                <div class="DisplayBox w-auto bg-black/40 backdrop-blur-sm h-auto rounded-xl p-10 flex gap-2 flex-col justify-around items-center">
+                    <h2 id="displayData" class="text-2xl font-medium">1 USD = 80 INR</h2>
+                    <div class="ButtonBar">
+                        <button class=" mainButton  bg-black pt-2 pb-2 pl-4 pr-4 rounded-2xl">Click To Convert</button>
+                    </div>
+                </div>
+
+            </div>
+    </div> 
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
