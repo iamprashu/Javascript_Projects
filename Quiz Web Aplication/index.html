@@ -7,8 +7,40 @@
     <link rel="stylesheet" href="TailwindCompiled.css">
 </head>
 <body>
-    <div class="mainBG h-screen w-screen bg-[#034C53] flex flex-col items-center justify-evenly">
-        
+    <div class="mainBG  min-h-screen max-h-full w-screen bg-[#034C53] flex flex-col items-center justify-evenly">
+        <h2 class="text-white text-xl md:text-2xl">Welcome to Quiz application</h2>
+        <div class="Selection_Section bg-[#106c74]  gap-5 h-[20%] w-[90%] flex flex-col justify-evenly items-center p-2 rounded-xl">
+            <p class="text-teal-100 font-extrabold">Please Select Quiz Topics And Set Deficuilty</p>
+            <div class="Selection grid  grid-cols-2 gap-5  md:flex md:justify-evenly md:w-[100%]">
+                <div class="bg-[#78c8d0] flex flex-col items-center justify-evenly rounded-xl p-2 md:w-[45%] ">
+                    <p class="">Select Topic For Quiz:</p>
+                    <select name="Topic" id="Topic" class="h-8 rounded-lg p-1">
+                      <option value="" id="DefaultOption">Select Topic</option>
+                    </select>
+                </div>
+                <div class="bg-[#78c8d0] flex flex-col  items-center justify-evenly rounded-xl p-2 md:w-[45%] ">
+                    <p>Select Dificuilty</p>
+                    <select name="dificuilty" id="dificuilty" class="h-8 rounded-lg p-1">
+                        <option value="">Select Dificuilty</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="GetQuestions()"class="bg-slate-500 border-2 hover:border-cyan-300 hover:bg-slate-600 pl-4 pr-4 pt-1 pb-1 rounded-xl">Get Quiz</button>
+        </div>
+
+        <!-- <div class="loadingQuiz">
+            <img src="loader.gif" alt="" class="rounded-xl">
+        </div> -->
+
+
+
+        <div class="QuestionPanel h-[76%] w-[90%] bg-slate-500 rounded-xl p-2 flex flex-col justify-evenly ">
+
+
+        </div>
+
     </div>
+
+    <script src="App.js"></script>
 </body>
 </html>
