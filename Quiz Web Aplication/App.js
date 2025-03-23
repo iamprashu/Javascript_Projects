@@ -1,5 +1,5 @@
 let QuizPanel = document.querySelector('.QuestionPanel');
-let apiKey = 'S6Kr0geQesYFuY5RRCjIud0zL1xcno5is2qFDARt';
+let apiKey = 'Get Yours';
 let Url = 'https://quizapi.io/api/v1';
 let TagsUrl = 'tags';
 let QuizTopic = '';
