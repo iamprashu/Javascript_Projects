@@ -13,9 +13,7 @@ for(let select of dropDown){
         let newOption = document.createElement('option');
         newOption.innerText = code;
         newOption.value = code;
-
         select.append(newOption)
-
         if(select.name === "from" & code === "USD"){
             newOption.selected = true
         }else if(select.name === "to" && code === "INR"){
@@ -25,7 +23,6 @@ for(let select of dropDown){
     select.addEventListener('change',(value)=>{
         UpdateImage(value.target)
     });
-
 }
 
 // code to change image in boxes
